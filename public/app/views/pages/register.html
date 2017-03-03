@@ -1,0 +1,40 @@
+<div class = "page-header">
+	<h1>Student Registration</h1>
+</div>
+
+<form ng-submit = "register.regStudent(regData);">
+	<label>Username:</label>
+	<input class ="form-control" type="text" name= "username" placeholder= "Enter Your Username" ng-model = "register.regData.username">
+	<br>
+
+	<label>Password:</label>
+	<input class ="form-control" type="password" name= "username" placeholder= "Enter Your Password" ng-model = "register.regData.password">
+	<br>
+
+	<button class = "btn btn-primary" type="submit">Register</button>
+</form>
+<br>
+<div ng-show = "register.error">{{ register.error }}</div>
+<br></br>
+
+<h1>Student Login</h1>
+
+
+<form ng-submit = "main.doLogin(loginData);">
+	<label>Username:</label>
+	<input class ="form-control" type="text" name= "username" placeholder= "Enter Your Username" ng-model = "main.loginData.username">
+	<br>
+
+	<label>Password:</label>
+	<input class ="form-control" type="password" name= "username" placeholder= "Enter Your Password" ng-model = "main.loginData.password">
+	<br>
+
+	<button class = "btn btn-primary" type = "submit">Login</button>
+</form>
+<br>
+<div ng-show = "main.error">{{ main.error }}</div>
+<br></br>
+<form ng-submit = "main.visitPort();">
+<button class = "btn btn-primary" type="submit">Visit Portfolios</button>
+</form>
+<br></br>

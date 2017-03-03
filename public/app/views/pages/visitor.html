@@ -1,0 +1,22 @@
+<title> Portfolios </title>
+<div class = "container">
+	<h1> Portfolios List </h1>
+	<table class = "table">
+		<thread>
+			<tr>
+				<th>Profile Picture</th>
+				<th>Email</th>
+				<th>Name</th>
+				<th>Work</th>
+			</tr>
+		</thread>
+		<tbody>
+			<tr ng-repeat = 'contacts in portfolio'></tr>
+				<td>{{contacts.displayPic}}</td>
+				<td>{{contacts.email}}</td>
+				<td>{{contacts.sname}}</td>			
+				<td>{{contacts.work}}</td>
+
+		</tbody>
+	</table>
+</div>
